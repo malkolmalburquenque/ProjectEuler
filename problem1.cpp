@@ -10,10 +10,10 @@ Find the sum of all the multiples of 3 or 5 below 1000.
 #include <iostream>
 using namespace std;
 
-int maxValue = 1000; //value to count up to
+int MAXVALUE = 1000; //value to count up to
 
 /* This function determines the sum of all multiples
-of 3 and 5 that are < maxValue */
+of 3 and 5 that are < MAXVALUE */
 int multiples(int n){
   int sum = 0;
   for (int i = 0; i < n; i++){
@@ -25,5 +25,5 @@ int multiples(int n){
 
 int main(){
   cout << "Sum of all multiples of 3 or 5 below "
-    << maxValue << " is: " << multiples(maxValue) << "\n";
+    << MAXVALUE << " is: " << multiples(MAXVALUE) << "\n";
 }
